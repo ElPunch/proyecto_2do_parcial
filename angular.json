@@ -37,6 +37,7 @@
               }
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.less"
             ],
             "server": "src/main.server.ts",
