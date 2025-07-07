@@ -20,5 +20,55 @@
 
 .button.is-primary {
   background-color: #00d1b2;
-  color: white;
+  color: black;
 }
+
+.tablero{
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0;
+    min-height: 0;
+
+    .tablas{
+        background: rgba(gray,  0.5);
+        padding: 8px 15px;
+
+        .nombre-tabla{
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .distribucion-tabla{
+        display: flex;
+        flex-grow: 1;
+        overflow-x: auto;
+
+        .columnas{
+            display: flex;
+            flex-grow: 1;
+
+            .columna{
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                flex-basis: 0;
+
+                min-width: 300px;
+                margin: 50px;
+                padding: 25px;
+
+                border-radius: 4px;
+
+                background: rgba(gray, 0.5);
+            }
+        }
+    }
+
+    
+}
+
+
